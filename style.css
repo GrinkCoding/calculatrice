@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    animation-name: changementCouleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes changementCouleur{
+    0%{background-color: #f1f1f1;}
+    25%{background-color: #f6e58d;}
+    50%{background-color: #f0932b;}
+    75%{background-color: #eb4d4b;}
+    100%{background-color: #ff0000;}
+}
+
+.calculatrice{
+    border: .2rem solid black;
+    width: 72rem;
+    padding: 2rem 0;
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: .4rem;
+    margin : 3rem 0;
+    background-color: #dfe6e9;
+    box-shadow: .5rem .5rem .9rem 0 rgba(0,0,0,.5);
+}
+
+
+.ecran{
+    width: 66rem;
+    height: 12rem;
+    background-color: #f1f1f1;
+    border : .1rem solid #b2bec3;
+    border-radius: .3rem;
+    margin: 1rem 0 3rem 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+    font-size: 5rem;
+}
+
+.clavier{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.touche{
+    width: 15rem;
+    height: 8rem;
+    border : 0.1rem solid black;
+    border-radius: .3rem;
+    margin : 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: .1rem .1rem .1rem #000;
+    transition: .3s;
+}
+
+.touche:active{
+    transform: translate(.2rem, .2rem);
+}
+
+.chiffre{
+    background-color: #74b9ff;
+}
+
+.signe{
+    background-color:#00cec9;
+}
+
+.egal{
+    background-color: #00b894;
+    width: 66rem;
+}
